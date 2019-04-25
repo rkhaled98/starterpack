@@ -15,4 +15,34 @@ body, html {
   .active {
     color: pink;
   }
-  
+
+  nav{
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li{
+        a{
+          text-decoration: none;
+          color: black;
+        }
+        // margin-left: 10px;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        // cursor: e-resize;
+        // display: block;
+      }
+      li:hover{
+        color: white;
+        background-color: black;
+        a{
+          color: white;
+        }
+      }
+    }
+  }
