@@ -12,15 +12,22 @@ import '../style.scss';
 
 
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import { Switch } from 'react-router';
+import Counter from '../containers/counter';
+import Controls from '../containers/controls';
 
 const About = (props) => {
   return <div> All there is to know about me </div>;
 };
 const Welcome = (props) => {
-  return <div>Welcome</div>;
+  return (
+    <div>Welcome
+      <Counter />
+      <Controls />
+    </div>
+  );
 };
 
 const Test = (props) => {
@@ -80,4 +87,6 @@ export default class App extends Component {
 //   );
 // };
 
-ReactDOM.render(<App />, document.getElementById('main'));
+// ReactDOM.render(<App />, document.getElementById('main'));
+
+// export default App;
